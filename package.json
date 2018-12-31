@@ -1,0 +1,32 @@
+{
+  "name": "ccq-core",
+  "version": "0.1.1",
+  "description": "koa project with typescript",
+  "main": "./index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch 'app/**/*' --watch 'lib/**/*' --delay 2 --signal SIGHUP -e ts,tsx --exec 'ts-node' ./app/server.ts"
+  },
+  "author": "syoueicc",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/koa": "^2.0.46",
+    "@types/koa-router": "^7.0.32",
+    "@types/lodash": "^4.14.116",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "glob": "^7.1.3",
+    "koa": "^2.5.3",
+    "koa-better-body": "^3.0.4",
+    "koa-convert": "^1.2.0",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.11",
+    "nodemon": "^1.18.9",
+    "reflect-metadata": "^0.1.12",
+    "sqlite3": "^4.0.4",
+    "typeorm": "^0.2.8"
+  }
+}
